@@ -1,34 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Nav />
     <router-view />
   </div>
 </template>
 
+<script>
+import Nav from "@/components/Nav.vue";
+
+export default {
+  components: {
+    Nav
+  }
+};
+</script>
+
 <style lang="scss">
 @import "~normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic");
+@import "@/assets/_vars.scss";
 
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  color: #fff;
+  background: $bg-color;
+  font-family: "Roboto", sans-serif;
 }
 
-#nav {
-  padding: 30px;
+.container {
+  padding: 0 30px;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.card {
+  box-shadow: 0px 27.7047px 27.7047px rgba(0, 0, 0, 0.1);
+  background: $bg-dark-color;
 }
 </style>
