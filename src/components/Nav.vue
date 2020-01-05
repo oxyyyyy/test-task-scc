@@ -4,7 +4,11 @@
     <router-link to="/about">Marketplace</router-link>
     <router-link to="/packs">Booster Packs</router-link>
     <router-link to="/leaderboard">Leaderboard</router-link>
-    <router-link to="/battleground">Battleground</router-link>
+    <router-link to="/battleground">
+      <div class="btn btn--gradient btn--gradient-mix">
+        <div class="btn-gradient-inner">Battleground</div>
+      </div>
+    </router-link>
   </nav>
 </template>
 
@@ -15,19 +19,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/_vars.scss";
+@import "@/assets/scss/_vars.scss";
 
 .nav {
-  background-color: $bg-nav-color;
-  padding: 15px 160px 15px 256px;
-
   a {
     font-size: 1rem;
+    font-weight: 700;
     color: #fff;
     text-decoration: none;
+    padding: 12px;
 
     &:not(:last-child) {
-      margin-right: 118px;
+      margin-right: 3rem;
     }
   }
 }

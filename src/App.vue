@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    <Nav />
+    <div class="top-bar">
+      <Nav />
+      <Status />
+    </div>
     <router-view />
   </div>
 </template>
 
 <script>
 import Nav from "@/components/Nav.vue";
+import Status from "@/components/Status.vue";
 
 export default {
   components: {
-    Nav
+    Nav,
+    Status
   }
 };
 </script>
@@ -18,20 +23,6 @@ export default {
 <style lang="scss">
 @import "~normalize.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic");
-@import "@/assets/_vars.scss";
-
-body {
-  color: #fff;
-  background: $bg-color;
-  font-family: "Roboto", sans-serif;
-}
-
-.container {
-  padding: 0 30px;
-}
-
-.card {
-  box-shadow: 0px 27.7047px 27.7047px rgba(0, 0, 0, 0.1);
-  background: $bg-dark-color;
-}
+@import "@/assets/scss/_vars.scss";
+@import "@/assets/scss/_common.scss";
 </style>
