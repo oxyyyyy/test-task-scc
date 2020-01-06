@@ -11,7 +11,12 @@
     </button>
     <button class="btn btn--gradient btn--gradient-dark">
       <div class="btn-gradient-inner">
-        <img src="@/assets/img/icons/diamond.svg" alt="" width="25" />
+        <img
+          src="@/assets/img/icons/diamond.svg"
+          alt=""
+          width="25"
+          style="margin-right: 6px"
+        />
         <span>470</span>
       </div>
     </button>

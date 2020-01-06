@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+html {
+  @media screen and (max-width: $screen-medium) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $screen-small) {
+    font-size: 12px;
+  }
+}
+
 body {
   color: $font-color;
   background: $bg-color;
@@ -47,7 +57,7 @@ button {
 
   &:hover {
     .card__img {
-      background-size: 110%;
+      // todo
     }
   }
 }
@@ -71,7 +81,7 @@ button {
 .card__img {
   box-shadow: 0px 28px 28px rgba(0, 0, 0, 0.1);
   background: $bg-dark-color;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: all $trans-prop;
@@ -82,12 +92,41 @@ button {
   margin-right: 10px;
 }
 
+.card__top-right-link {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: (33/40);
+  color: #6F6D99;
+  text-transform: none;
+
+  span {
+    margin-right: 10px;
+  }
+
+  img {
+    transition: all $trans-prop;
+    position: relative;
+    right: 0;
+  }
+
+  &:hover {
+    img {
+      right: -3px;
+    }
+  }
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $bg-nav-color;
   padding: 15px 160px 15px 256px;
+
+  @media screen and (max-width: 1600px) {
+    padding: 15px 30px;
+  }
 }
 
 .btn {

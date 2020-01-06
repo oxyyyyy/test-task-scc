@@ -33,5 +33,32 @@ export default {
       margin-right: 3rem;
     }
   }
+
+  @media screen and (max-width: 1350px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-nav-color;
+
+    a {
+      font-size: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    .btn-gradient-inner {
+      font-size: 2rem;
+      line-height: 2.2rem;
+      padding: 15px 28px;
+    }
+  }
 }
 </style>

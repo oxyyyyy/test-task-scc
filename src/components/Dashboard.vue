@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-grid container">
-    <Profile class="card-placeholder" style="grid-area: profile" />
-    <Teams class="card-placeholder" style="grid-area: teams" />
+    <Profile class="dashboard-grid__profile card-placeholder" />
+    <Teams class="dashboard-grid__team card-placeholder" />
     <DefaultCard
       title="profile"
       icon="./assets/img/icons/card-icon-3.svg"
@@ -58,6 +58,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "@/assets/scss/_vars.scss";
+
 .dashboard-grid {
   display: grid;
   grid-template-areas:
@@ -68,5 +70,43 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
   padding-top: 60px;
+
+  @media screen and (max-width: $screen-medium-big) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas:
+      "profile teams"
+      "profile teams"
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+  }
+
+  @media screen and (max-width: $screen-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 200px);
+    grid-template-areas:
+      "profile"
+      "profile"
+      "teams"
+      "teams"
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+}
+
+.dashboard-grid__profile {
+  grid-area: profile;
+}
+
+.dashboard-grid__team {
+  grid-area: teams;
 }
 </style>
