@@ -48,15 +48,27 @@ export default {
   margin-right: 40px;
 
   img {
-    max-width: 1rem;
+    max-width: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-right: 25px;
   }
 }
 
 .btn--gradient-light {
   margin-right: 20px;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 .btn--gradient-dark {
   margin-right: 20px;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 </style>

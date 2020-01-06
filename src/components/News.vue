@@ -90,11 +90,16 @@ export default {
 .news-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 30px;
+  grid-gap: $container-size;
   padding-top: 160px;
 
   @media screen and (max-width: $screen-medium-big) {
     grid-template-columns: 1fr;
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: $screen-small) {
+    padding-top: 50px;
   }
 }
 

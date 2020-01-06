@@ -66,7 +66,7 @@ export default {
     "profile teams . ."
     "profile teams . ."
     ". . . .";
-  grid-gap: 30px;
+  grid-gap: $container-size;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
   padding-top: 60px;
@@ -99,6 +99,7 @@ export default {
       "."
       "."
       ".";
+    grid-gap: $container-size-small;
   }
 }
 

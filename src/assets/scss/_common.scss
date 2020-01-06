@@ -16,7 +16,11 @@ body {
   color: $font-color;
   background: $bg-color;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 30px;
+  padding-bottom: $container-size;
+
+  @media screen and (max-width: $screen-small) {
+    padding-bottom: $container-size-small;
+  }
 }
 
 figure {
@@ -38,7 +42,11 @@ button {
 }
 
 .container {
-  padding: 0 30px;
+  padding: 0 $container-size;
+
+  @media screen and (max-width: $screen-small) {
+    padding: 0 $container-size-small;
+  }
 }
 
 .card-placeholder {
@@ -63,7 +71,6 @@ button {
 }
 
 .card__title-with-icon {
-  font-family: Roboto;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.03em;
@@ -125,7 +132,11 @@ button {
   padding: 15px 160px 15px 256px;
 
   @media screen and (max-width: 1600px) {
-    padding: 15px 30px;
+    padding: 15px $container-size;
+  }
+
+  @media screen and (max-width: $screen-small) {
+    padding: $container-size-small;
   }
 }
 

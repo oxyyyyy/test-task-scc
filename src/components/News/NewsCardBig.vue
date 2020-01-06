@@ -36,7 +36,11 @@ export default {
   display: flex;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: $container-size;
+
+    @media screen and (max-width: $screen-small) {
+      margin-bottom: $container-size-small;
+    }
   }
 }
 
