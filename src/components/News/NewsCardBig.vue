@@ -45,7 +45,7 @@ export default {
 }
 
 .news-card-big {
-  min-height: 465px;
+  min-height: 30rem;
   box-shadow: 0px 28px 28px rgba(0, 0, 0, 0.1);
   background: $bg-dark-color;
   background-size: cover;

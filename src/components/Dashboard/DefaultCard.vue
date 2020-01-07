@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="card card-default">
+  <router-link :to="link" class="card card-default">
     <div class="card__title-with-icon">
       <img v-if="icon" :src="icon" alt="" class="card__icon" />
       <h4 class="card__title-text">{{ title }}</h4>
@@ -8,7 +8,7 @@
       class="card__img"
       :style="{ backgroundImage: `url(${image})` }"
     ></figure>
-  </a>
+  </router-link>
 </template>
 
 <script>
@@ -17,7 +17,11 @@ export default {
   props: {
     title: String,
     icon: String,
-    image: String
+    image: String,
+    link: {
+      type: String,
+      default: "/"
+    }
   }
 };
 </script>

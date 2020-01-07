@@ -6,37 +6,44 @@
       title="profile"
       icon="./assets/img/icons/card-icon-3.svg"
       image="./assets/img/cards/card-1.png"
+      link="/profile"
     />
     <DefaultCard
       title="altar"
       icon="./assets/img/icons/card-icon-4.svg"
       image="./assets/img/cards/card-2.png"
+      link="/altar"
     />
-    <div class="card-placeholder"></div>
+    <Quests class="dashboard-grid__quests" />
     <DefaultCard
       title="calendar"
       icon="./assets/img/icons/card-icon-6.svg"
       image="./assets/img/cards/card-3.png"
+      link="/calendar"
     />
     <DefaultCard
       title="inventory"
       icon="./assets/img/icons/card-icon-7.svg"
       image="./assets/img/cards/card-4.png"
+      link="/inventory"
     />
     <DefaultCard
       title="wiki"
       icon="./assets/img/icons/card-icon-8.svg"
       image="./assets/img/cards/card-5.png"
+      link="/wiki"
     />
     <DefaultCard
       title="bosses"
       icon="./assets/img/icons/card-icon-9.svg"
       image="./assets/img/cards/card-6.png"
+      link="/bosses"
     />
     <DefaultCard
       title="fortune wheel"
       icon="./assets/img/icons/card-icon-10.svg"
       image="./assets/img/cards/card-7.png"
+      link="/fortune-wheel"
     />
   </div>
 </template>
@@ -44,6 +51,7 @@
 <script>
 import Profile from "@/components/Dashboard/Profile.vue";
 import Teams from "@/components/Dashboard/Teams.vue";
+import Quests from "@/components/Dashboard/Quests.vue";
 import DefaultCard from "@/components/Dashboard/DefaultCard.vue";
 
 export default {
@@ -51,6 +59,7 @@ export default {
   components: {
     Profile,
     Teams,
+    Quests,
     DefaultCard
   }
 };
