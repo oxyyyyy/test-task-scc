@@ -11,7 +11,7 @@
     />
     <div class="nav__links" :class="{ navLinksActive: navIsActive }">
       <router-link to="/">Home</router-link>
-      <router-link to="/about">Marketplace</router-link>
+      <router-link to="/market">Marketplace</router-link>
       <router-link to="/packs">Booster Packs</router-link>
       <router-link to="/leaderboard">Leaderboard</router-link>
       <router-link to="/battleground" class="nav__link-btn">
