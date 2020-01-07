@@ -46,6 +46,7 @@ export default {
 .notification-btn {
   display: flex;
   margin-right: 40px;
+  transition: all $trans-prop;
 
   img {
     max-width: 20px;
@@ -53,6 +54,10 @@ export default {
 
   @media screen and (max-width: 500px) {
     margin-right: 25px;
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }
 

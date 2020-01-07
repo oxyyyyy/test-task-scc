@@ -34,8 +34,10 @@ export default {
   }
 
   &:hover {
-    .news-card-small__title {
-      // todo
+    .news-card-small__title,
+    .news-card-small__date,
+    .news-card-small__excerpt {
+      opacity: 0.6;
     }
   }
 }
@@ -50,6 +52,7 @@ export default {
   margin-bottom: 1.6rem;
   position: relative;
   z-index: 10;
+  transition: all $trans-prop;
 }
 
 .news-card-small__title {
@@ -72,5 +75,6 @@ export default {
   margin: 0;
   position: relative;
   z-index: 10;
+  transition: all $trans-prop;
 }
 </style>

@@ -45,6 +45,7 @@ export default {
 }
 
 .news-card-big {
+  width: 100%;
   min-height: 30rem;
   box-shadow: 0px 28px 28px rgba(0, 0, 0, 0.1);
   background: $bg-dark-color;
@@ -67,7 +68,7 @@ export default {
     height: 100%;
     z-index: 5;
     background: linear-gradient(180deg, rgba(32, 30, 46, 0) 0%, #201e2e 100%);
-    opacity: 0.9;
+    opacity: 0.8;
     transition: all $trans-prop;
   }
 

@@ -14,7 +14,7 @@
       <router-link to="/about">Marketplace</router-link>
       <router-link to="/packs">Booster Packs</router-link>
       <router-link to="/leaderboard">Leaderboard</router-link>
-      <router-link to="/battleground">
+      <router-link to="/battleground" class="nav__link-btn">
         <div class="btn btn--gradient btn--gradient-mix">
           <div class="btn-gradient-inner">Battleground</div>
         </div>
@@ -60,9 +60,23 @@ export default {
     color: #fff;
     text-decoration: none;
     padding: 12px;
+    opacity: 0.5;
+    transition: all $trans-prop;
 
     &:not(:last-child) {
       margin-right: 3rem;
+    }
+
+    &.router-link-exact-active {
+      opacity: 1;
+    }
+
+    &.nav__link-btn {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 

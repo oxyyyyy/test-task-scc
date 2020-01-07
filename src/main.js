@@ -5,7 +5,9 @@ import store from "./store";
 
 import * as TastyBurgerButton from "vue-tasty-burgers";
 import "vue-tasty-burgers/dist/vue-tasty-burgers.css";
+import vueSmoothScroll from "vue2-smooth-scroll";
 
+Vue.use(vueSmoothScroll);
 Vue.use(TastyBurgerButton);
 
 Vue.config.productionTip = false;

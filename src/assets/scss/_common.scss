@@ -62,12 +62,6 @@ button {
 .card-default {
   display: grid;
   grid-template-rows: 2rem auto;
-
-  &:hover {
-    .card__img {
-      // todo
-    }
-  }
 }
 
 .card__title-with-icon {

@@ -79,6 +79,7 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
   padding-top: 60px;
+  padding-bottom: 80px;
 
   @media screen and (max-width: $screen-medium-big) {
     grid-template-columns: repeat(2, 1fr);
