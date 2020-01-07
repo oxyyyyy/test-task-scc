@@ -97,6 +97,7 @@ export default {
 
     .nav__links {
       position: fixed;
+      z-index: 1000;
       top: 0;
       left: 0;
       width: 100%;
@@ -121,7 +122,7 @@ export default {
 .nav__burger {
   display: none;
   position: relative;
-  z-index: 500;
+  z-index: 1500;
 
   @media screen and (max-width: 1350px) {
     display: block;

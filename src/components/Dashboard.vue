@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-grid container">
     <Profile class="dashboard-grid__profile card-placeholder" />
-    <Teams class="dashboard-grid__team card-placeholder" />
+    <Teams class="dashboard-grid__team" />
     <DefaultCard
       title="profile"
       icon="./assets/img/icons/card-icon-3.svg"
