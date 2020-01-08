@@ -91,7 +91,7 @@ export default {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: $container-size;
-  padding-top: 50px;
+  padding-top: 4rem;
 
   @media screen and (max-width: $screen-medium-big) {
     grid-template-columns: 1fr;

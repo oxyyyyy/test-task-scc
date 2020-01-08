@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-grid container">
-    <Profile class="dashboard-grid__profile card-placeholder" />
+    <Profile class="dashboard-grid__profile" />
     <Teams class="dashboard-grid__team" />
     <DefaultCard
       title="profile"
@@ -78,8 +78,8 @@ export default {
   grid-gap: $container-size;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 3.2rem;
+  padding-bottom: 4.5rem;
 
   @media screen and (max-width: $screen-medium-big) {
     grid-template-columns: repeat(2, 1fr);

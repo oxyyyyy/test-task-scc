@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "*",
-    name: "404",
+    name: "NotFound",
     component: NotFound
   },
   {

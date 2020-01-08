@@ -37,6 +37,18 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(75, 73, 103, 0.3);
+  }
+
+  &:nth-last-child(2) {
+    opacity: 0.8;
+  }
+
+  &:last-child {
+    opacity: 0.6;
+  }
 }
 
 .friend-item__left {
@@ -46,7 +58,7 @@ export default {
 }
 
 .friend-item__avatar {
-  max-width: 45px;
+  max-width: 35px;
 
   img {
     padding: 0;
@@ -80,6 +92,7 @@ export default {
 
   img {
     margin-left: 5px;
+    margin-top: -3px;
   }
 }
 
