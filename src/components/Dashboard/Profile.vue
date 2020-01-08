@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="card-profile__header-top-right">
-          <img src="@/assets/img/rank.png" alt="" width="100" />
+          <img src="@/assets/img/rank.png" alt="" width="85rem" />
         </div>
       </div>
       <div class="card-profile__header-bottom">
@@ -52,13 +52,23 @@
           <p class="card-profile__body-header-online">4 <span>Online</span></p>
         </div>
       </div>
+      <div class="card-profile__body-inner">
+        <FriendItem nickname="Dragon Lore" :rating="1200" isOnline />
+        <FriendItem nickname="Maroonameow" :rating="800" isOnline />
+        <FriendItem nickname="Dragon Lore" :rating="1200" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import FriendItem from "@/components/Profile/FriendItem.vue";
+
 export default {
-  name: "Profile"
+  name: "Profile",
+  components: {
+    FriendItem
+  }
 };
 </script>
 
@@ -108,6 +118,10 @@ export default {
   padding: 0.2rem 2rem;
   padding-bottom: 2rem;
   background: rgba(32, 30, 46, 0.6);
+}
+
+.card-profile__body {
+  overflow: auto;
 }
 
 .card-profile__body-header {

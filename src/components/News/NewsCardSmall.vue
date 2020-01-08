@@ -9,8 +9,6 @@
 </template>
 
 <script>
-// import Profile from "@/components/Dashboard/Profile.vue";
-
 export default {
   name: "NewsCardSmall",
   props: {
