@@ -3,10 +3,10 @@
     <Profile class="dashboard-grid__profile" />
     <Teams class="dashboard-grid__team" />
     <DefaultCard
-      title="profile"
+      title="battleground"
       icon="./assets/img/icons/card-icon-3.svg"
       image="./assets/img/cards/card-1.png"
-      link="/profile"
+      link="/battleground"
     />
     <DefaultCard
       title="altar"
