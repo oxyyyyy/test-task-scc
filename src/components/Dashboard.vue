@@ -77,9 +77,9 @@ export default {
     ". . . .";
   grid-gap: $container-size;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 220px);
   padding-top: 3.2rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 2.5rem;
 
   @media screen and (max-width: $screen-medium-big) {
     grid-template-columns: repeat(2, 1fr);
