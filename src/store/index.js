@@ -17,10 +17,8 @@ export default new Vuex.Store({
         .then(response => {
           state.data = response.data;
           state.dataIsRecived = true;
-          console.log(response);
         })
-        .catch(error => {
-          console.log("There was an error:", error.response);
+        .catch(() => {
           state.dataIsRecived = false;
         });
     }
