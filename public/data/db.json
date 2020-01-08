@@ -1,0 +1,25 @@
+{
+  "quests": [
+    {
+      "id": 0,
+      "title": "Победить 3 раза в PVP битвах",
+      "status": "3/3",
+      "link": "/quest-1",
+      "isActive": true
+    },
+    {
+      "id": 1,
+      "title": "Убить 3 разные рассы...",
+      "status": "1/3",
+      "link": "/quest-2",
+      "isActive": false
+    },
+    {
+      "id": 2,
+      "title": "Убить 3 разные рассы...",
+      "status": "2/3",
+      "link": "/quest-3",
+      "isActive": false
+    }
+  ]
+}

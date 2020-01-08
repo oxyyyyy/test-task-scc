@@ -5,14 +5,14 @@
       <h4 class="card__title-text">daily quests</h4>
     </div>
     <div class="card-quests__body card__img">
-      <QuestItem
-        title="Победить 3 раза в PVP битвах"
-        number="3/3"
-        link="/quest-1"
-        isActive
-      />
-      <QuestItem title="Убить 3 разные рассы..." number="1/3" link="/quest-2" />
-      <QuestItem title="Убить 3 разные рассы..." number="2/3" link="/quest-3" />
+      <div class="card-quests__body-list" v-for="item in data" :key="item.id">
+        <QuestItem
+          :title="item.title"
+          :number="item.status"
+          :link="item.link"
+          :isActive="item.isActive"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -24,6 +24,14 @@ export default {
   name: "Quests",
   components: {
     QuestItem
+  },
+  computed: {
+    data() {
+      return this.$store.state.data.quests;
+    }
+  },
+  created() {
+    this.$store.dispatch("updateData");
   }
 };
 </script>
@@ -50,5 +58,10 @@ export default {
     background: linear-gradient(180deg, rgba(32, 30, 46, 0) 0%, #201e2e 100%);
     pointer-events: none;
   }
+}
+
+.card-quests__body-list {
+  display: flex;
+  align-items: center;
 }
 </style>

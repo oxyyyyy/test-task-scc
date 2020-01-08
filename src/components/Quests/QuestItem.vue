@@ -41,6 +41,7 @@ export default {
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 1rem;
+  width: 100%;
 
   &:nth-child(even) {
     background: linear-gradient(
